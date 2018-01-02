@@ -1,0 +1,83 @@
+.centered {
+  display: flex;
+  justify-content: center
+}
+
+.users-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+
+}
+.user {
+  border: 2px solid black;
+  flex-grow: 1;
+  margin: 10px;
+}
+
+.user h2 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.user-age {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.user-priority-1 {
+  background-color: orange;
+}
+
+.user-priority-2 {
+  background-color: green;
+}
+
+.user-priority-3 {
+  background-color: blue;
+}
+
+.user-priority-4 {
+  background-color: purple;
+}
+
+.sort-panel, .filter-panel, .container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+}
+
+.filters-row, .sorts-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+}
+
+.filter-radio {
+  margin: 0 15px;
+}
+
+@media (max-width: 768px) {
+  .user {
+    width: 80%;
+    min-width: 80%;
+    max-width: 80%;
+  }
+
+  .user-column-spacer {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .user, .user-column-spacer {
+    width: 30%;
+    min-width: 30%;
+    max-width: 30%;
+    float: left;
+    margin: 10px;
+  }
+}
